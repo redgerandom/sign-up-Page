@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Form Example</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2fr 2fr 0fr  0fr;
+      gap: 20px;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      border: 2px solid #ccc;
+    }
+
+    .pic {
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .content input {
+      padding: 8px;
+      font-size: 1rem;
+    }
+
+    .content button {
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="pic">
+      <p>[Pic]</p>
+    </div>
+    <div class="content">
+      <p>Paragraph about the form or person.</p>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <button>Submit</button>
+    </div>
+  </div>
+
+</body>
+</html>
